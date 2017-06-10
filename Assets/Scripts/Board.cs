@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Board : MonoBehaviour
 {
@@ -8,12 +9,16 @@ public class Board : MonoBehaviour
     {
         _cells = new Cell[rows, colums];
 
+        var random = UnityEngine.Random.value;
+
         for (var y = 0; y < _cells.GetLength(1); ++y)
             for (var x = 0; x < _cells.GetLength(0); ++x)
             {
                 var cell = Instantiate(prefab, new Vector3(x - rows/2, y - colums/2, 0), Quaternion.identity);
                 cell.x = x;
                 cell.y = y;
+                // cell.State = UnityEngine.Random.value > 0.5 ? Cell.CellState.Alive : Cell.CellState.Empty;
+                // cell.ChangeToNextState();
                 _cells[x, y] = cell;
             }
     }
