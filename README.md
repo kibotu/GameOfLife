@@ -5,5 +5,4 @@
 
 Quick version of the famous of [John Horton Conway's Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
-
-[![Screenshot](http://i.imgur.com/DpsmQiB.png?1)](https://kibotu.github.io/GameOfLife/)
+[![Screenshot](https://raw.githubusercontent.com/kibotu/GameOfLife/master/screenshot.png)](https://raw.githubusercontent.com/kibotu/GameOfLife/master/screenshot.png)
